@@ -80,7 +80,7 @@ public class SociosController extends HttpServlet {
 			if (idSoc > 0) {
 				sociosDAO.eliminarSocioHard(idSoc);
 			}
-			response.sendRedirect("/SociosController");
+			response.sendRedirect("SociosController");
 		}
 		if (disp != null) {
 			disp.forward(request, response);
